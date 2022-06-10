@@ -4151,7 +4151,7 @@ GE005 = " Bagaimana jika terdapat kendala untuk login ke situs sso.telkomunivers
  \
 "ketik atau klik \"/start\" untuk kembali ke menu utama. "
 
-response = "Harap Untuk Memasukan Kode Yang Sudah Disediakan Secara Benar\n \n - LKM FIT BOT -"
+response = "Harap Untuk Mengklik Kode Yang Sudah Disediakan Secara Benar\n \n - LKM FIT BOT -"
 
 
 
@@ -5417,6 +5417,17 @@ def send_welcome(message):
 
 
     bot.send_message(message.chat.id, start)
+
+@bot.message_handler(content_types=['text'])
+def echo_messages(message):
+    text = message.text
+    if text == 'If'  :
+         bot.reply_to(message, response)
+    elif text == 'Elif' :
+         bot.reply_to(message, response)
+    else:
+         bot.reply_to(message, response)
+
 
 while True:
     try:
