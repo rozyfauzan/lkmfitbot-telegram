@@ -5415,9 +5415,6 @@ def send_welcome(message):
 
 
 
-
-    bot.send_message(message.chat.id, start)
-
 @bot.message_handler(content_types=['text'])
 def echo_messages(message):
     text = message.text
