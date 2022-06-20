@@ -1,12 +1,5 @@
 import telebot
 import time
-import pymongo
-from pymongo import MongoClient
-
-cluster = MongoClient("mongodb+srv://lkmfitbot-telegram:lkmfitbot-telegram@cluster0.ueypo.mongodb.net/?retryWrites=true&w=majority")
-
-db = cluster["lkmfitbot-telegram"]
-collection = db["lkmfitbot-telegram"]
 
 
 
@@ -4175,8 +4168,7 @@ response = "Harap Untuk Mengklik Kode Yang Sudah Disediakan Secara Benar\n \n - 
 def send_welcome(message):
     bot.send_message(message.chat.id, start)
     print(message.chat.id)
-    data = {"chat": message.chat.id, "penulis": "lkmfitbot"}
-    collection.insert_one(data)
+
 
 
 @bot.message_handler(commands=['hey'])
