@@ -4163,6 +4163,7 @@ response = "Harap Untuk Mengklik Kode Yang Sudah Disediakan Secara Benar\n \n - 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.send_message(message.chat.id, start)
+  print(message)
 
 
 @bot.message_handler(commands=['hey'])
