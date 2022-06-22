@@ -5,7 +5,7 @@ import time
 
 
 
-TOKEN = "Masukan Token Bot Telegram Disini "
+TOKEN = "Masukan Token API Bot Telegram Disini "
 
 bot = telebot.TeleBot(TOKEN)
 
