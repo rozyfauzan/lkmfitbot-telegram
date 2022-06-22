@@ -5,7 +5,7 @@ import time
 
 
 
-TOKEN = "5162593240:AAHMXqyTjCiMJIFXar-6W5_CHb8tX0TcYt4"
+TOKEN = "Masukan Token Bot Telegram Disini "
 
 bot = telebot.TeleBot(TOKEN)
 
