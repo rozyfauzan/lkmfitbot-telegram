@@ -1,11 +1,7 @@
 import telebot
 import time
 
-
-
-
-
-TOKEN = "Masukan Token API Bot Telegram Disini "
+TOKEN = "5384352973:AAEz0Ipmmm_hZXtEqBDWipUWMxxy8LoVs_Y"
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -992,7 +988,7 @@ ADE001 = " Apa itu Magang MBKM? \n" \
  \
          "Magang MBKM adalah magang yang dilaksanakan oleh Kemendikbud dan Bagian Perkuliahan Universitas dan Luar Prodi Studi (BPUPLS dahulu PPDU) Universitas Telkom guna mendukung program Merdeka Belajar Kampus Merdeka (MBKM).\n\nInformasi selanjutnya mengenai program magang MBKM dan lowongan Magang MBKM dapat dilihat di kampusmerdeka.kemdikbud.go.id/program/magang atau di ppdu - internship.telkomuniversity.ac.id / \n \n"\
 \
-
+\
 "\nketik atau klik \"/ADE\" untuk kembali ke menu sebelumnya. \n" \
  \
  \
@@ -4037,7 +4033,9 @@ GE = "Silahkan ketik atau klik Kode Sesuai dengan Opsi Pertanyaan yang ingin dii
      "\n" \
  \
  \
-     "\nketik atau klik \"/G\" untuk kembali ke menu sebelumnya."
+     "\nketik atau klik \"/G\" untuk kembali ke menu sebelumnya.\n"\
+ \
+"ketik atau klik \"/start\" untuk kembali ke menu utama. "
 
 GE001 = "Apakah kegunaan Google Classroom LKM?"\
 \
@@ -4167,8 +4165,6 @@ response = "Harap Untuk Mengklik Kode Yang Sudah Disediakan Secara Benar\n \n - 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.send_message(message.chat.id, start)
-    print(message.chat.id)
-
 
 
 @bot.message_handler(commands=['hey'])
